@@ -1,10 +1,11 @@
-import  React, { useState}  from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react'
+import { StyleSheet, Text, View, FlatList } from 'react-native';
 
 import Header from './src/Header';
+import List from './src/List';
 
 export default function App() {
-  
+
   const [feed, setFeed] = useState([
     {
       id: '1',
@@ -56,6 +57,13 @@ export default function App() {
     <View style={styles.container}>
       <View>
         <Header />
+
+        <FlatList
+          showsVerticalScrollIndicator={false}
+          keyExtractor={(item) => item.id}
+          data={feed}
+          renderItem={({ item }) => <List data={item} />}
+        />
       </View>
     </View>
   );
