@@ -21,7 +21,8 @@ export default function App() {
       nome: 'Matheus',
       descricao: 'Isso sim é ser raiz!!!',
       imgperfil: 'https://sujeitoprogramador.com/instareact/fotoPerfil2.png',
-      imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto2.png'
+      imgPublicacao: 'https://sujeitoprogramador.com/instareact/foto2.png',
+      likers: 0
     },
     {
       id: '3',

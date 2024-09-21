@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
         paddingLeft: 15,
         paddingRight: 15,
         marginTop: 27,
+        marginBottom: 15,
         borderBottomWidth: 0.2,
         shadowColor: '#000',
         elevation: 2
